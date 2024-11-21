@@ -12,7 +12,7 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <source.and.target.JVM.version>11</source.and.target.JVM.version>
+        <source.and.target.JVM.version>21</source.and.target.JVM.version>
         <org.apache.maven.plugins.maven-compiler-plugin.version>3.8.0
         </org.apache.maven.plugins.maven-compiler-plugin.version>
         <org.apache.maven.plugins.maven-surefire-plugin.version>3.1.2
@@ -244,7 +244,7 @@
         <dependency>
             <groupId>ch.qos.logback</groupId>
             <artifactId>logback-classic</artifactId>
-            <version>1.2.3</version>
+            <version>1.4.12</version>
         </dependency>
 
         <dependency>
@@ -399,7 +399,7 @@
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-            <version>4.11</version>
+            <version>4.13.1</version>
             <scope>test</scope>
         </dependency>
 
@@ -421,7 +421,7 @@
         <dependency>
             <groupId>org.json</groupId>
             <artifactId>json</artifactId>
-            <version>20180130</version>
+            <version>20231013</version>
         </dependency>
         <!--Apache POI-->
         <dependency>
