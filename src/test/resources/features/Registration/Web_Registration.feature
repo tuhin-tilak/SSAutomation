@@ -95,3 +95,6 @@ Feature: Web Registration E2E flow
     Examples:
       | Scenario     |
       | PIN_Expired2 |
+    @google
+    Scenario: Launch google
+      Given User launch google
