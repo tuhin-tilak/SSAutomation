@@ -29,7 +29,7 @@ import java.util.Properties;
 @CucumberOptions(
 
         features = "src/test/resources/features", glue = "com.cucumbercraft.stepdefinitions",
-        tags = "@google",
+        tags = "@goog",
         monochrome = true, plugin = {"pretty:target/cucumber-report/Smoke/pretty.txt",
         "html:target/cucumber-report/Smoke/index.html", "json:target/cucumber-report/Smoke/cucumber.json",
         "junit:target/cucumber-report/Smoke/cucumber-junitreport.xml",
