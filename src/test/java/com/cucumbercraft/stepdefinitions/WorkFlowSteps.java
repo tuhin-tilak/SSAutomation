@@ -37,6 +37,7 @@ public class WorkFlowSteps extends MasterStepDefs {
     @Given("User launch google")
     public void userLaunchGoogle() {
         driver.get("https://www.google.com");
+        driver.findElement(By.name("h"));
         ExtentCucumberAdapter.addTestStepLog("Launched Google");
 
 
@@ -83,10 +84,8 @@ public class WorkFlowSteps extends MasterStepDefs {
     public void validateCaseDetailsPageIsDisplayed(String holding) {
         try {
             wkflow.validate_Repayment_Search("4018039816");
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
+        } catch (IOException | InterruptedException e) {
+            throw new RuntimeException(e);
         }
     }
 
