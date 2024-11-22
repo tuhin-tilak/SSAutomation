@@ -32,6 +32,7 @@ public class BuyNowSteps extends MasterStepDefs{
         try {
 
             data = excelRow.getTestData(config.getBuyNowFilePath(),config.getBuyNowSheetName(),testcase);
+            System.out.println(data);
             yourOrder = homePage.clickBuyNowOnHomePage();
         } catch (Exception e) {
             Assert.fail(e.getMessage());
