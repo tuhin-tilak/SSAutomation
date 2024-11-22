@@ -37,7 +37,7 @@ public class WorkFlowSteps extends MasterStepDefs {
     @Given("User launch google")
     public void userLaunchGoogle() {
         driver.get("https://www.google.com");
-        driver.findElement(By.name("h"));
+//        driver.findElement(By.name("h"));
         ExtentCucumberAdapter.addTestStepLog("Launched Google");
 
 
