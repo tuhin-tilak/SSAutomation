@@ -6,7 +6,7 @@ import org.checkerframework.checker.units.qual.K;
 @Config.Sources({"classpath:Global Settings.properties"})
 public interface PropertyConfig extends Config {
     @Key("Environment")
-    @DefaultValue("uat")
+//    @DefaultValue("uat")
     String env();
 
     @Key("statesavings.${Environment}.url")

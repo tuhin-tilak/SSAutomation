@@ -27,7 +27,7 @@ public abstract class MasterStepDefs {
     protected APIReusuableLibrary apiDriver = new APIReusuableLibrary();
     Map<String, Object> perfectoCommand = new HashMap<>();
     private static HttpURLConnection httpURLConnect;
-    PropertyConfig config= ConfigFactory.create(PropertyConfig.class);
+    PropertyConfig config= ConfigFactory.create(PropertyConfig.class,System.getProperties());
     int responseStatus;
     int responseCode;
 
